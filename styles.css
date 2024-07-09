@@ -1,57 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #7b93b9;
 }
 
 header {
-    background-color: #7ccfa3;
+    background-color: lightslategray;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
 
-nav ul {
+header .logo img {
+    width: 125px; 
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-links {
     list-style: none;
-    padding: 0;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+header .nav-links li {
+    margin: 0 1rem;
 }
 
-nav ul li a {
+header .nav-links a {
     color: #fff;
     text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero {
+    background: url('https://www.adobe.com/content/dam/cc/us/en/products/photography/social-media/PhotoThumbnail1.jpg') no-repeat center center/cover; /* Add your background image here */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero .hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #ff4500;
 }
 
 section {
-    padding: 2rem;
-    background: #fff;
-    margin: 1rem;
+    padding: 4rem 0;
 }
 
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5rem;
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
-.project {
-    border: 1px solid #ddd;
+section .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.services .service-box {
+    background: #f4f4f4;
     padding: 1rem;
-    margin: 1rem 0;
-    background: #fafafa;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact input, .contact textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact button {
+    padding: 1rem;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
     background: #333;
     color: #fff;
+    text-align: center;
+    padding: 1rem 0;
     position: fixed;
-    width: 100%;
     bottom: 0;
+    width: 100%;
+}
+
+.about {
+    background-color: rgb(161, 214, 214);
+
+}
+
+.services {
+    background: url('https://t3.ftcdn.net/jpg/01/26/53/04/360_F_126530463_nxTojXnN8IEIpxHwVeoOVahAZJNPwt7a.jpg')no-repeat center center/cover;
+}
+
+.contact{
+    background-color: cadetblue;
 }
