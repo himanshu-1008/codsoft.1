@@ -3,71 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Landing Page</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="data:image/png;base64,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" alt="Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>CHOICE OF PROFESSIONALS</h1>
-            <p>Capturing Moments, Creating Memories. Join us to capture this beautiful world </p>
-            <a href="#contact" class="btn">Get in Touch</a>
+    <div class="calculator">
+        <input type="text" class="calculator-screen" disabled />
+        <div class="calculator-keys">
+            <button type="button" class="operator" value="+">+</button>
+            <button type="button" class="operator" value="-">-</button>
+            <button type="button" class="operator" value="*">&times;</button>
+            <button type="button" class="operator" value="/">&divide;</button>
+            <button type="button" value="7">7</button>
+            <button type="button" value="8">8</button>
+            <button type="button" value="9">9</button>
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
+            <button type="button" value="6">6</button>
+            <button type="button" value="1">1</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="3">3</button>
+            <button type="button" value="0">0</button>
+            <button type="button" class="decimal" value=".">.</button>
+            <button type="button" class="all-clear" value="all-clear">AC</button>
+            <button type="button" class="equal-sign" value="=">=</button>
         </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Photography is my passion - nature is my refuge. Combine the two, and that is where I am most at peace</p>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <div class="container">
-            <h2>My Services</h2>
-            <div class="service-box">
-                <h3>Service One</h3>
-                <p>Wedding Photoshoot</p>
-            </div>
-            <div class="service-box">
-                <h3>Service Two</h3>
-                <p>Modelling Photoshoot.</p>
-            </div>
-            <div class="service-box">
-                <h3>Service Three</h3>
-                <p>Photo editing.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Nikhil Photography. All rights reserved.</p>
-    </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
