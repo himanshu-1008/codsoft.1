@@ -1,75 +1,57 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    padding: 0;
+    background-color: #7b93b9;
 }
 
-.calculator {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+header {
+    background-color: #7ccfa3;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-.calculator-screen {
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    background: #fff;
+    margin: 1rem;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #fafafa;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    position: fixed;
     width: 100%;
-    height: 80px;
-    border: none;
-    background-color: #252525;
-    color: white;
-    text-align: right;
-    padding-right: 20px;
-    padding-left: 10px;
-    font-size: 2.5em;
-}
-
-.calculator-keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-}
-
-button {
-    height: 80px;
-    border: none;
-    background-color: white;
-    font-size: 1.5em;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #f0f0f0;
-}
-
-.operator {
-    background-color: #f9a825;
-    color: white;
-}
-
-.operator:hover {
-    background-color: #f57f17;
-}
-
-.equal-sign {
-    background-color: #66bb6a;
-    color: white;
-    grid-column: span 2;
-}
-
-.equal-sign:hover {
-    background-color: #43a047;
-}
-
-.all-clear {
-    background-color: #e57373;
-    color: white;
-    grid-column: span 2;
-}
-
-.all-clear:hover {
-    background-color: #ef5350;
+    bottom: 0;
 }
